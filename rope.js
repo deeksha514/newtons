@@ -12,7 +12,7 @@ class Rope{
     World.add(world,this.rope);
 }
 display(){
-    var PointA=this.rope.bodyA.position;
+     var PointA=this.rope.bodyA.position;
     var PointB=this.rope.bodyB.position;
 
     strokeWeight(2);
@@ -23,6 +23,5 @@ display(){
     var Anchor2X=pointB.x+this.offsetX;
     var Anchor2Y=pointB.y+this.offsetY;
     line (Anchor1X,Anchor1Y,Anchor2X,Anchor2Y);
-    
-}
-}
+
+}}
