@@ -26,15 +26,15 @@ function setup() {
 
 	roof=new Roof(400,100,800,50);
 
-	rope1=new Rope(bob1.body,roof.body,bob1.CENTER,0);
+	rope1=new Rope(bob1.body,roof.body,-70,100);
 	stroke("black");
-	rope2=new Rope(bob2.body,roof.body,bob2.CENTER,0);
+	rope2=new Rope(bob2.body,roof.body,-70,200);
 	stroke("black");
-	rope3=new Rope(bob3.body,roof.body,bob3.CENTER,0);
+	rope3=new Rope(bob3.body,roof.body,-70,300);
 	stroke("black");
-	rope4=new Rope(bob4.body,roof.body,bob4.CENTER,0);
+	rope4=new Rope(bob4.body,roof.body,-70,400);
 	stroke("black");
-	rope5=new Rope(bob5.body,roof.body,bob5.CENTER,0);
+	rope5=new Rope(bob5.body,roof.body,-70,500);
     stroke("black");
 	Engine.run(engine);
 
@@ -46,19 +46,21 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
+
+  
+  roof.display();
+  rope1.display();
+  rope2.display();
+  rope3.display();
+  rope4.display();
+  rope5.display();
   bob1.display();
   bob2.display();
   bob3.display();
   bob4.display();
   bob5.display();
 
-  roof.display();
 
-  rope1.display();
-  rope2.display();
-  rope3.display();
-  rope4.display();
-  rope5.display();
 
   drawSprites();
  

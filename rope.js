@@ -17,11 +17,11 @@ display(){
 
     strokeWeight(2);
     stroke(210,102,109);
-    var Anchor1X=pointA.x;
-    var Anchor1Y=pointA.y;
+    var Anchor1X=PointA.x;
+    var Anchor1Y=PointA.y;
 
-    var Anchor2X=pointB.x+this.offsetX;
-    var Anchor2Y=pointB.y+this.offsetY;
+    var Anchor2X=PointB.x+this.offsetX;
+    var Anchor2Y=PointB.y+this.offsetY;
     line (Anchor1X,Anchor1Y,Anchor2X,Anchor2Y);
 
 }}
