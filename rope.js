@@ -6,22 +6,23 @@ class Rope{
     var options={
         bodyA:body1,
         bodyB:body2,
-        AnchorB:{x:this.offsetX, y:this.offsetY}
+        PointB:{x:this.offsetX, y:this.offsetY}
     }
     this.rope=Constraint.create(options);
     World.add(world,this.rope);
 }
 display(){
-    var AnchorA=this.rope.bodyA.position;
-    var AnchorB=this.rope.bodyB.position;
+    var PointA=this.rope.bodyA.position;
+    var PointB=this.rope.bodyB.position;
 
     strokeWeight(2);
+    stroke(210,102,109);
+    var Anchor1X=pointA.x;
+    var Anchor1Y=pointA.y;
 
-    var point1X=pointA.x;
-    var point1Y=pointA.y;
-
-    var point2X=pointB.x+this.offsetX;
-    var point2Y=pointB.y+this.offsetY;
-    line (point1X,point1Y,point2X,point2Y);
+    var Anchor2X=pointB.x+this.offsetX;
+    var Anchor2Y=pointB.y+this.offsetY;
+    line (Anchor1X,Anchor1Y,Anchor2X,Anchor2Y);
+    
 }
 }
